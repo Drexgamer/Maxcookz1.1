@@ -8,7 +8,7 @@ body, html {
 
 /* Hero-Bereich */
 .hero {
-  background-image: url('salat.jpg'); /* Bild in den selben Ordner wie index.html legen */
+  background-image: url('fleisch.jpg'); /* Bild in den selben Ordner wie index.html legen */
   background-size: cover;
   background-position: center;
   height: 100vh; /* Volle Bildschirmhöhe */
