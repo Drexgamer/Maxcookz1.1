@@ -1,0 +1,63 @@
+/* Allgemeine Einstellungen für den Body und HTML */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif; /* Eine schöne Schriftart für den gesamten Text */
+}
+
+/* Hero-Bereich */
+.hero {
+  background-image: url('salat.jpg'); /* Bild in den selben Ordner wie index.html legen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Volle Bildschirmhöhe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px; /* Etwas Abstand auf den Seiten */
+}
+
+/* Hero-Inhalt */
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-weight: bold; /* Fettgedruckt für mehr Wirkung */
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 600px; /* Maximale Breite für Text */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content a {
+  padding: 10px 20px;
+  background-color: #ff6a00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 18px; /* Etwas größere Schrift für den Link */
+}
+
+.hero-content a:hover {
+  background-color: #ff8500;
+}
+
+/* Sicherstellen, dass der Text auf kleinen Geräten nicht zu nah am Rand ist */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px; /* Kleinere Schrift auf mobilen Geräten */
+  }
+  .hero-content p {
+    font-size: 18px; /* Kleinere Schrift auf mobilen Geräten */
+  }
+  .hero-content a {
+    font-size: 16px; /* Kleinere Schaltfläche auf mobilen Geräten */
+  }
+}
